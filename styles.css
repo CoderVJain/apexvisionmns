@@ -629,7 +629,7 @@ main {
 
 .accounting-icon {
     background-color: rgba(38, 166, 154, 0.1);
-    color: var(--secondary);
+    color: var(--primary);
 }
 
 .service-card h3 {
