@@ -114,7 +114,7 @@ main {
 }
 
 .btn-accent:hover {
-    background-color: #f4683a;
+    background-color: #ffaa00;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -224,7 +224,6 @@ main {
     font-weight: bold;
     font-family: "Roboto Slab", serif;
     text-align: center;
-
 }
 
 .logo-apex {
@@ -663,7 +662,7 @@ main {
 }
 
 .accounting-link {
-    color: var(--secondary);
+    color: var(--primary);
 }
 
 /* Testimonials */
@@ -910,7 +909,6 @@ main {
 
 .contact-info i {
     font-size: 0.75rem;
-    margin-right: 10px;
 }
 
 .copyright {
