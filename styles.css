@@ -85,7 +85,8 @@ main {
 .section-header h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: var(--neutral-400);
+    /* color: var(--neutral-400); */
+    color: #164a9e;
 }
 
 .section-header p {
@@ -106,7 +107,9 @@ main {
 }
 
 .btn-accent {
-    background-color: var(--accent);
+    /* background-color: var(--accent); */
+    background-color: #e79f0f;
+    ;
     color: white;
 }
 
@@ -134,7 +137,7 @@ main {
     position: sticky;
     top: 0;
     z-index: 100;
-    border-bottom: 1px solid var(--neutral-200);
+
 }
 
 .navbar {
@@ -142,7 +145,6 @@ main {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 0;
-    
 }
 
 .navbar-container {
@@ -155,7 +157,6 @@ main {
 
 .logo {
     display: flex;
-    flex-direction: column;
     align-items: center;
     font-family: var(--font-heading);
     font-weight: 700;
@@ -220,26 +221,29 @@ main {
 
 .logo-text {
     color: #3A6FD8;
-  font-weight: bold;
+    font-weight: bold;
     font-family: "Roboto Slab", serif;
+    text-align: center;
+
 }
 
 .logo-apex {
     /* color: #C69851; */
     color: #F5B942;
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .logo-vision {
     /* color: #C69851; */
-     color: #F5B942;
-  font-weight: bold;
+    color: #F5B942;
+    font-weight: bold;
 }
 
 
 .logo-img {
-    height: 70px;
-    width: 70px;
+    margin-top: 10px;
+    height: 50px;
+    width: 50px;
     border-radius: 100%;
 }
 
@@ -253,7 +257,7 @@ main {
     padding: 0.75rem 1.25rem;
     font-weight: 500;
     transition: all var(--transition-speed);
-    color:  #fff;
+    color: #fff;
     border-radius: var(--border-radius);
 }
 
@@ -520,13 +524,26 @@ main {
     overflow: hidden;
 }
 
+.service-header::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -100px;
+    width: 350px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+}
+
 .service-header-title {
     font-size: 350%;
 }
 
 .service-header-title span {
-    color:  #002f79e9;
+    color: #002f79e9;
 }
+
 .featured-services {
     padding: 5rem 0;
 }
@@ -750,7 +767,8 @@ main {
 .footer-logo {
     display: flex;
     align-items: center;
-    font-family: "Roboto Slab", serif;;
+    font-family: "Roboto Slab", serif;
+    ;
     font-weight: 700;
     margin-bottom: 0.75rem;
     transition: transform var(--transition-speed);
@@ -768,11 +786,11 @@ main {
 
 
 .logo-apex-footer {
-    color:  #C69851;
+    color: #C69851;
 }
 
 .logo-vision-footer {
-    color:  #C69851;
+    color: #C69851;
 }
 
 .logo-mns-footer {
@@ -788,6 +806,7 @@ main {
     border-radius: 100%;
     margin-right: 10px;
 }
+
 .footer-column p {
     color: rgba(255, 255, 255, 0.7);
     font-size: 0.875rem;
@@ -862,8 +881,19 @@ main {
     overflow: hidden;
 }
 
+.contact-header::before {
+        content: "";
+        position: absolute;
+        top: -100px;
+        right: -100px;
+        width: 400px;
+        height: 400px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+      }
+
 .contact-title {
-     font-size: 350%;
+    font-size: 350%;
 }
 
 .contact-title span {
