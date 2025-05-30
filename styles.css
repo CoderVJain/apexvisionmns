@@ -83,13 +83,14 @@ main {
 }
 
 .section-header h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
     /* color: var(--neutral-400); */
     color: #164a9e;
 }
 
 .section-header p {
+    font-size: 1.3rem;
     max-width: 600px;
     margin: 0 auto;
     color: var(--neutral-300);
@@ -137,7 +138,8 @@ main {
     position: sticky;
     top: 0;
     z-index: 100;
-
+    width: 100%;
+    height: 150px;
 }
 
 .navbar {
@@ -145,14 +147,15 @@ main {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 0;
+    height: 150px;
 }
 
 .navbar-container {
     width: 100%;
-    max-width: 1500px;
     margin: 0 auto;
     padding: 0 1.5rem;
     background-color: #0B1A2B;
+    height: 150px;
 }
 
 .logo {
@@ -255,6 +258,7 @@ main {
     position: relative;
     padding: 0.75rem 1.25rem;
     font-weight: 500;
+    font-size: 1.5rem;
     transition: all var(--transition-speed);
     color: #fff;
     border-radius: var(--border-radius);
@@ -387,7 +391,7 @@ main {
     color: white;
     padding: 6rem 0;
     overflow: hidden;
-    
+    height: 100vh;
 }
 
 
@@ -431,9 +435,13 @@ main {
 
 .hero-container {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
+    margin-top: 150px;
     padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-overlay {
@@ -461,8 +469,12 @@ main {
 .hero-content {
     position: relative;
     z-index: 2;
-    max-width: 600px;
+    max-width: 1000px;
     animation: slide-up 1s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 @keyframes slide-up {
@@ -478,19 +490,25 @@ main {
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 6rem;
     margin-bottom: 1.5rem;
     line-height: 1.2;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     animation: fade-in 0.8s ease-out 0.2s both;
 }
 
+.hero h1 span {
+    color: #F5B942;
+    ;
+}
+
 .hero p {
-    font-size: 1.25rem;
+    font-size: 2rem;
     margin-bottom: 2.5rem;
     opacity: 0.95;
     line-height: 1.6;
     animation: fade-in 0.8s ease-out 0.4s both;
+    text-align: center;
 }
 
 @keyframes fade-in {
@@ -531,7 +549,7 @@ main {
     color: white;
     padding: 6rem 0;
     overflow: hidden;
-    
+    height: 100vh;
 }
 
 .hero-2::before {
@@ -597,10 +615,17 @@ main {
 .hero-content-2 {
     position: relative;
     z-index: 2;
-    max-width: 600px;
+    max-width: 1000px;
     animation: slide-up 1s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
+.hero-content-2 h1 span {
+    color: #3A6FD8;
+}
 @keyframes slide-up {
     0% {
         opacity: 0;
@@ -614,7 +639,7 @@ main {
 }
 
 .hero-2 h1 {
-    font-size: 3rem;
+    font-size: 6rem;
     margin-bottom: 1.5rem;
     line-height: 1.2;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -622,11 +647,12 @@ main {
 }
 
 .hero-2 p {
-    font-size: 1.25rem;
+    font-size: 2rem;
     margin-bottom: 2.5rem;
     opacity: 0.95;
     line-height: 1.6;
     animation: fade-in 0.8s ease-out 0.4s both;
+    text-align: center;
 }
 
 @keyframes fade-in {
@@ -1026,15 +1052,15 @@ main {
 }
 
 .contact-header::before {
-        content: "";
-        position: absolute;
-        top: -100px;
-        right: -100px;
-        width: 400px;
-        height: 400px;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 50%;
-      }
+    content: "";
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
 
 .contact-title {
     font-size: 350%;
@@ -1066,21 +1092,42 @@ main {
 }
 
 /* Responsive Styles */
-@media (max-width: 992px) {
-    .hero h1 {
-        font-size: 2.25rem;
-    }
 
-    .hero-2 h1 {
-        font-size: 2.25rem;
-    }
-
-    .section-header h2 {
-        font-size: 1.75rem;
+@media (max-width:1020px) {
+    .nav-links a {
+        font-size: 1rem;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    .hero-2 h1 {
+        font-size: 4rem;
+    }
+
+    .hero-2 p {
+        font-size: 1.5rem;
+    }
+
+
+    .section-header h2 {
+        font-size: 2.5rem;
+    }
+
+    .section-header p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 830px) {
+
     .nav-links {
         display: none;
     }
@@ -1093,6 +1140,10 @@ main {
         display: block;
     }
 
+}
+
+@media (max-width: 768px) {
+
     .hero {
         padding: 4rem 0;
     }
@@ -1102,11 +1153,11 @@ main {
     }
 
     .hero h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .hero-2 h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .services-grid,
@@ -1120,11 +1171,11 @@ main {
 }
 
 @media (max-width: 576px) {
-    
-    
+
+
 
     .section-header h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .footer-grid {
