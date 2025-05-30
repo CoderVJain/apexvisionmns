@@ -738,6 +738,7 @@ main {
 }
 
 .service-content {
+    background-color: rgb(255, 251, 251);
     padding: 2.5rem;
     flex: 1;
     display: flex;
@@ -812,7 +813,6 @@ main {
 
 /* Testimonials */
 .testimonials {
-    background-color: white;
     padding: 5rem 0;
 }
 
@@ -823,7 +823,7 @@ main {
 }
 
 .testimonial-card {
-    background-color: var(--neutral-100);
+    background-color: rgb(255, 251, 251);
     padding: 1.5rem;
     border-radius: var(--border-radius);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
