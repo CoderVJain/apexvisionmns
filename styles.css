@@ -147,7 +147,6 @@ main {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 0;
-    
 }
 
 .navbar-container {
@@ -225,7 +224,7 @@ main {
 .logo-text {
     color: #3A6FD8;
     font-weight: bold;
-    font-family: "Roboto Slab", serif;
+    font-family: "PT Serif", serif;
     text-align: center;
 }
 
@@ -251,7 +250,7 @@ main {
 
 .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .nav-links a {
@@ -1116,6 +1115,9 @@ main {
         font-size: 1.5rem;
     }
 
+    .nav-links {
+        gap: 2rem;
+    }
 
     .section-header h2 {
         font-size: 2.5rem;
