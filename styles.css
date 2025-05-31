@@ -115,7 +115,7 @@ main {
 }
 
 .hero-2-btn-accent {
-    background-color: #3A6FD8; 
+    background-color: #3A6FD8;
 }
 
 
@@ -126,7 +126,8 @@ main {
 }
 
 .hero-2-btn-accent:hover {
-    background-color: #0055ff;;
+    background-color: #0055ff;
+    ;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -150,7 +151,7 @@ main {
     top: 0;
     z-index: 100;
     width: 100%;
-    
+
 }
 
 .navbar {
@@ -165,7 +166,7 @@ main {
     margin: 0 auto;
     padding: 0 1.5rem;
     background-color: #0B1A2B;
-    
+
 }
 
 .logo {
@@ -636,6 +637,7 @@ main {
 .hero-content-2 h1 span {
     color: #3A6FD8;
 }
+
 @keyframes slide-up {
     0% {
         opacity: 0;
@@ -732,6 +734,12 @@ main {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+}
+
+.service-item:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.368);
 }
 
 .service-card {
@@ -935,6 +943,10 @@ main {
     background-color: #0B1A2B;
     color: white;
     padding: 3rem 0 1.5rem;
+}
+
+.footer-container {
+    max-width: 1500px;
 }
 
 .footer-grid {
